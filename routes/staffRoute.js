@@ -6,6 +6,6 @@ const router = express.Router()
 
 
 router.route("/").post(createStaff).get(getAllStaff);
-router.route("/:staffId").get(getSingleStaff).put(updateStaff).delete(deleteStaff)
+router.route("/:_id").get(getSingleStaff).put(updateStaff).delete(deleteStaff)
 
 module.exports = router;
